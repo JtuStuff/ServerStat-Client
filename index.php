@@ -20,5 +20,5 @@ setInterval(dt, 1000);
 </body>
 </html>
 
-<?php mysqli_close($db); ?>
+<?php $conn->close(); ?>
 
