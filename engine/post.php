@@ -18,7 +18,7 @@ if (empty($_POST['Status'])){
 	echo "0449";
 	exit();
 }
-else if (preg_match('/[^a-z_\-0-9]/i', $Status)) {
+else if (preg_match('/[^a-zA-Z ]/i', $Status)) {
 	echo "8690";
 	exit();
 }
