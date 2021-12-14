@@ -6,7 +6,7 @@ if($conn->connect_error) {
     die("Connection failed");
 }
 
-$sql = "SELECT * FROM Result ORDER BY Id DESC LIMIT 1";
+$sql = "SELECT * FROM $Tbname ORDER BY Id DESC LIMIT 1";
 $result = $conn->query($sql); 
 $data = $result->fetch_assoc();
 
