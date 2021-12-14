@@ -25,10 +25,10 @@ else if (preg_match('/[^a-zA-Z ]/i', $Status)) {
 
 else {
 
-$sql="INSERT INTO Result (Status, TimeStamp) VALUES ('$Status', CURRENT_TIMESTAMP())";
+$sql="INSERT INTO $Tbname (Status, TimeStamp) VALUES ('$Status', CURRENT_TIMESTAMP())";
 
 if (!$conn->query($sql)) {
-    die('Error: ' . mysqli_error($db));
+    die('Error: ' . $conn->error);
 }
 
 $conn-> close();
