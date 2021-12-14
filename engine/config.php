@@ -3,5 +3,5 @@ $servername = "localhost";
 $username = "";
 $password = "";
 $dbname = "ServerStat";
-$Tbname = "Main";
+$Tbname = "Result";
 ?>
