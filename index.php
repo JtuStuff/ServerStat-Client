@@ -4,7 +4,7 @@
 
 <?php echo "<h3 style='$color'>".$status ."</h3>"; ?>
     <hr size=8>
-    <h3>Last Update</h3>
+    <h3>Last Update (Webhost Server Time)</h3>
 <?php echo "<h4>".$dt ."</h4>"; ?>
     <hr size=8>
     <h3>Current Date and Time is</h3>
